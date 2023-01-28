@@ -1,0 +1,44 @@
+<!-- ======= Resume Section ======= -->
+<section id="resume" class="resume">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Resume</h2>
+            <h4 id="resume-name">Shawn Kristek</h4>
+            <p>7yrs of robots & electrical engineering | 5yrs of software engineering</p>
+        </div>
+        
+        <!-- TODO add graphical timeline and highlight most relevant positions -->
+
+        {% for sec in resume %}
+        {% set ns = namespace(showMore = false) %}
+        <div class="row">
+            <h3 class="resume-title">{{ sec.title() }}</h3>
+
+            {% for entry in resume[sec] %}
+            <div class="col-lg-6 resume-item {% if entry.highlight == 'false' %}resume-item-hidden{% endif %}">
+                <h4>{{ entry.title.title() }}</h4>
+                <h4>{{ entry.subtitle.title() }}</h4>
+                <h5>{{ entry.years }}</h5>
+                <p><em>{{ entry.location }}</em></p>
+                <p> {{ entry.description }} </p>
+                <ul>
+                    {% for b in entry.bullets %}
+                    <li>{{ b }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+                {% if entry.highlight == 'false' %}
+                    {%  set ns.showMore = true %}
+                {% endif %}
+            {% endfor %}
+
+            {% if ns.showMore %}
+            <div class="resume-btn-container">
+                <button class="btn btn-success resume-btn-showmore">Show More</button>
+            </div>
+            {% endif %}
+
+        </div>
+        {% endfor %}
+</section>

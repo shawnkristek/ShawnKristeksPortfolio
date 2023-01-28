@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %}New Post{% endblock %}
+
+{% block body %}
+<section id="create" class="contact">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>New Post</h2>
+    </div>
+    <form method="POST">
+      <div class="row form-row">
+        <div class="col-md-9">
+          <input placeholder="Title" class="form-control" name="title" id="title" value="{{ request.form['title'] }}"
+            required>
+        </div>
+        <div class="col-md-3">
+          <input type="submit" value="Save">
+        </div>
+      </div>
+      <div class="row form-row">
+        <div class="col-md-9">
+          <textarea placeholder="Summary" name="summary" class="form-control" rows="4" id="summary">{{ request.form['summary'] }}</textarea>
+        </div>
+        <div class="col-md-3">
+          <input placeholder="Slug" class="form-control" name="slug" id="slug" value="{{ request.form['slug'] }}">
+          <input placeholder="Img" class="form-control" name="img" id="img" value="{{ request.form['img'] }}">
+        </div>
+      </div>
+      <div class="row form-row">
+        <div class="col-md-9">
+          <textarea placeholder="Content" name="content" class="form-control" rows="20" id="content">{{ request.form['content'] }}</textarea>
+        </div>
+        <div class="col-md-3">
+          <!-- insert sidebar content here -->
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

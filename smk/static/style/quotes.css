@@ -1,0 +1,76 @@
+body {
+  --page-color: #6ea500;
+  background-color: var(--page-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#quote-box {
+  display: table;
+  width: 450px;
+  color: var(--page-color);
+  background-color: white;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border: 1px solid var(--page-color);
+  border-radius: 5px;
+}
+
+button.btn {
+  background-color: var(--page-color);
+  color: white;
+  border-radius: 5px;
+  padding: 8px 10px;
+  border: 1px solid var(--page-color);
+}
+
+button.btn:hover {
+  opacity: 0.85;
+}
+
+#text {
+  font-family: serif;
+  font-size: 30px;
+}
+
+#text i {
+  color: var(--page-color);
+  font-size: 20px;
+}
+
+#tweet-quote {
+  float: left;
+}
+
+#new-quote {
+  float: right;
+}
+
+footer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  width: 450px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}

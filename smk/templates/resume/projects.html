@@ -1,0 +1,45 @@
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Projects</h2>
+            <p>Contact me to get a complete code walkthrough of any of my projects below.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active"><button class="btn btn-sm btn-smk">All</button></li>
+                    <li data-filter=".filter-js"><button class="btn btn-sm btn-smk">JavaScript</button></li>
+                    <li data-filter=".filter-py"><button class="btn btn-sm btn-smk">Python & Flask</button></li>
+                    <!--li data-filter=".filter-ror">Ruby on Rails</li-->
+                    <li data-filter=".filter-shopify"><button class="btn btn-sm btn-smk">Shopify</button></li>
+                    <li data-filter=".filter-wp"><button class="btn btn-sm btn-smk">Wordpress</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            {% for proj in projects %}{# loop thru and add all projects #}
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-{{ proj.filter }}">
+                <div class="portfolio-wrap">
+                    <img src="{{ url_for('static',filename=proj.img.url)}}" class="img-fluid" alt="{{ proj.img.alt }}">
+                    <div class="portfolio-info">
+                        <h4>{{ proj.name }}</h4>
+                        <p>{{ proj.category }}</p>
+                        <div class="portfolio-links">
+                            <a class="venobox" data-vbtype="iframe" data-gall="portfolioDetailsGallery" href="{{ url_for('project', project_id=proj.id) }}" title="Project Details"><button class="btn">See Details</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section><!-- End Portfolio Section -->

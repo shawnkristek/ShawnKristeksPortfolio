@@ -1,0 +1,43 @@
+{% extends 'blog/blog.html' %}
+
+{% block blogtitle %}
+    Tech Blog
+{% endblock %}
+
+{% block sectiontitle %}Tech Blog {% endblock %}
+{% block sectionsummary %}{% endblock %}
+
+{% block blogfeed %}
+          <header>
+            <div>
+
+              <div class="about">
+                {{post['created_at'].strftime('%B').upper() }} <span class="date-no">{{ post['created_at'].strftime('%d, %Y')
+                  }}</span> by <span class="author">{{ post['firstname'].upper() }} {{ post['lastname'].upper() }}</span>
+                {% if g.user['id'] == post['author_id'] %}
+                <a class="action" href="{{ url_for('blog.update', id=post['id']) }}">(edit)</a>
+                {% endif %}
+              </div>
+                <h2 class="title">{{ post['title'] }}</h2>
+
+              <!--TODO loop thru and add all post topics(tags) -->
+              <!--div class="topics">
+                TOPICS:
+                {# for tag in post['tags'] #}
+                <span>PYTHON</span>
+                <span>SQLITE</span>
+                <span>FLASK</span>
+                {# endfor #}
+              </div-->
+
+              <!--TODO add share links here -->
+
+              <!--TODO add post image here -->
+                <img class="img-fluid" src="{{ url_for('static', filename=post['img']) }}" />
+            </div>
+
+          </header>
+          <p class="summary">{{ post['summary'] }}</p>
+
+          <div class="content">{{ content }}</div>
+{% endblock %}

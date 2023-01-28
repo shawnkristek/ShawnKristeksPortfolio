@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'head.html' %}
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">{{ proj.name }}</h2>
+            <div class="owl-carousel portfolio-details-carousel">
+              {% for img in proj.gallery %}
+              <img src="{{ url_for('static', filename=img.url) }}" class="img-fluid" alt="img.alt">
+              {% endfor %}
+            </div>
+          </div>
+
+          <div class="col-lg-4 portfolio-info">
+            <ul>
+              <li><strong>Category</strong>: {{ proj.category.title() }}</li>
+              <!-- li><strong>Completion Date</strong>: {{ proj.date }}</li -->
+              <li><strong>URL</strong>: <a href="{{ url_for(proj.url) }}" target="_blank">{{ proj.urltext }}</a></li>
+              <li><strong>Technologies</strong>: 
+                <h4>
+                  {% set technologies = proj.technologies.split(", ") %}
+                  {% for tech in technologies %}
+                    <span class="badge badge-secondary">{{tech}}</span>
+                  {% endfor %}
+                </h4>
+              </li>
+              {% if proj.demo == 'true' %}
+              <li><a href="{{ url_for(proj.url) }}" target="_blank"><button class="btn btn-block">Demo Project</button></a></li>
+              {% endif %}
+            </ul>
+
+            <p>
+              {{ proj.description }}
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details -->
+
+  </main><!-- End #main -->
+
+  {% include 'tail.html' %}
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta property="og:image" content="https://shawnkristek.com/static/img/portfolio/quotivation-01.jpg">
+  <title>SK: Quotivation</title>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static',filename='img/skicon.svg') }}" rel="icon">
+  <!-- TODO add alternate icon here -->
+  <link href="{{ url_for('static',filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style/quotes.css') }}">
+</head>
+
+<body>
+  <main class="container">
+    <div id="quote-box">
+      <p id="text">
+        <i class="fa fa-quote-left"></i>
+        <span id="quote">This is a quote from someone you've never heard of.</span>
+        <i class="fa fa-quote-right"></i>
+      </p>
+      <p id="author">by Someone</p>
+      <div id="buttons">
+        <a id="tweet-quote" title="Tweet this quote" target="_blank"><button class="btn"><i class="fa fa-twitter"></i></button></a>
+        <a id="new-quote" title="Fetch new quote"><button class="btn">New Quote</button></a>
+      </div>
+    </div>
+    <footer>
+      by <a href="{{ url_for('index') }}">Shawn Kristek</a>
+    </footer>
+  </main>
+
+  <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+  <script type=text/javascript src="{{ url_for('static', filename='js/quotes.js') }}"></script>
+</body>
+
+</html>

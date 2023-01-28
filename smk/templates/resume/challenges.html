@@ -1,0 +1,45 @@
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Challenges</h2>
+            <p>Full scale projects are best built by focusing on smaller components one at a time. I hone this skill while learning new ones by doing challenges like these. Plus, building these is a lot of fun. Click on one to learn more.</p>
+        </div>
+
+        <!--div class="row">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-app">App</li>
+                    <li data-filter=".filter-card">Card</li>
+                    <li data-filter=".filter-web">Web</li>
+                </ul>
+            </div>
+        </div-->
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            {% for challenge in challenges %}{# loop thru and add all projects #}
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-{{ challenge.filter }}">
+                <div class="portfolio-wrap">
+                    <img src="{{ url_for('static',filename=challenge.img.url)}}" class="img-fluid" alt="{{ challenge.img.alt }}">
+                    <div class="portfolio-info">
+                        <h4>{{ challenge.name.capitalize() }}</h4>
+                        <p>{{ challenge.filter.capitalize() }}</p>
+                        <div class="portfolio-links">
+                            <a href="{{ url_for('challenge', challenge_id=challenge.id) }}" data-gall="portfolioDetailsGallery"
+                                data-vbtype="iframe" class="venobox" title="Project Details"><i
+                                    class="bx bx-detail"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+</section><!-- End Portfolio Section -->

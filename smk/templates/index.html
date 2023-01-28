@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Shawn Kristek - Full Stack Engineer{% endblock %}
+
+{% block body %}
+{% include 'resume/hero.html' %}
+<main id="main">
+  {% include 'resume/projects.html' %}
+  {% include 'resume/skills.html' %}
+  {% include 'resume/contact2.html' %}
+</main><!-- End #main -->
+{% include 'footer.html' %}
+
+{% endblock %}

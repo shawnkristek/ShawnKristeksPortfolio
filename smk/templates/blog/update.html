@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Edit "{{ post['title'] }}"{% endblock %}
+
+{% block body %}
+<section id="update" class="contact">
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Edit<br>
+      "{{ post['title'] }}"</h2>
+    </div>
+    <form method="POST">
+      <div class="row form-row">
+        <div class="col-md-9">
+          <input placeholder="Title" class="form-control" name="title" id="title" value="{{ request.form['title'] or post['title'] }}"
+            required>
+        </div>
+        <div class="col-md-3">
+          <input type="submit" value="Save">
+        </div>
+      </div>
+      <div class="row form-row">
+        <div class="col-md-9">
+          <textarea placeholder="Summary" name="summary" class="form-control" rows="4" id="summary">{{ request.form['summary'] or post['summary'] }}</textarea>
+        </div>
+        <div class="col-md-3">
+          <input placeholder="Slug" class="form-control" name="slug" id="slug" value="{{ request.form['slug'] or post['slug'] }}">
+          <input placeholder="Img" class="form-control" name="img" id="img" value="{{ request.form['img'] or post['img'] }}">
+        </div>
+      </div>
+      <div class="row form-row">
+        <div class="col-md-9">
+          <textarea placeholder="Content" name="content" class="form-control" rows="20" id="content">{{ request.form['content'] or post['content'] }}</textarea>
+        </div>
+        <div class="col-md-3">
+          <!--input class="danger" type="submit" value="Delete" onclick="return confirm('Are you sure?');"-->
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+{% endblock %}
+
+

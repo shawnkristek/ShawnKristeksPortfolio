@@ -1,0 +1,58 @@
+{% extends 'blog/blog.html' %}
+
+{% block blogtitle %}
+    Shawn Kristek's Tech Blog
+{% endblock %}
+
+{% block sectiontitle %}Shawn's Tech Blog {% endblock %}
+{% block sectionsummary %}This is where I share my thoughts on the things I'm learning in technology and programming.{% endblock %}
+
+{% block blogfeed %}
+
+          {% for post in posts %}
+          <header>
+            <div>
+
+              <div class="about">
+                {{post['created_at'].strftime('%B').upper() }} <span class="date-no">{{ post['created_at'].strftime('%d, %Y')
+                  }}</span> by <span class="author">{{ post['firstname'].upper() }} {{ post['lastname'].upper() }}</span>
+                {% if g.user['id'] == post['author_id'] %}
+                <a class="action" href="{{ url_for('blog.update', id=post['id']) }}">(edit)</a>
+                {% endif %}
+              </div>
+
+              <a class="title" href="{{ url_for('blog.post', id=post['id'], slug=post['slug']) }}">
+                <h2 class="title">{{ post['title'] }}</h2>
+              </a>
+
+              <!--TODO loop thru and add all post topics(tags) -->
+              <!--div class="topics">
+                TOPICS:
+                {# for tag in post['tags'] #}
+                <span>PYTHON</span>
+                <span>SQLITE</span>
+                <span>FLASK</span>
+                {# endfor #}
+              </div-->
+
+              <!--TODO add share links here -->
+
+              <!--TODO add post image here -->
+              <a class="post" href="{{ url_for('blog.post', id=post['id'], slug=post['slug'] ) }}">
+                <img class="img-fluid" src="{{ url_for('static', filename=post['img']) }}" />
+              </a>
+            </div>
+
+          </header>
+          <p class="summary">{{ post['summary'] }}</p>
+
+          <!--h5>Content</h5>
+          <p class="content">{{ post['content'] }}</p-->
+          <!--TODO clip long posts and link to post page for further reading-->
+          <a href="{{ url_for('blog.post', id=post['id'], slug=post['slug']) }}">Continue Reading</a>
+          {% if not loop.last %}
+          <hr>
+          {% endif %}
+          {% endfor %}
+
+{% endblock %}

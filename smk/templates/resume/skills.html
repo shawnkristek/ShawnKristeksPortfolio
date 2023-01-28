@@ -1,0 +1,32 @@
+<!-- ======= Skills Section ======= -->
+<section id="skills" class="skills">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Tech Skills</h2>
+            <p>My programming skills started with using C for AI and robotics projects. Now I have used and can quickly adapt to many technologies.<br>Below I have highlighted my strongest skills.<p>
+        </div>
+
+        <div class="row">
+            {% for skill in skills %}
+            <div class="align-items-stretch skill-card" data-aos="zoom-in" data-aos-delay="{{ skill.delay }}">
+                <div class="icon-box {{ skill.color }}">
+                    <div class="icon">
+                    {% if skill.svgFile == "" %}
+                        {% for icon in skill.icons %}
+                        <i class="bx {{ icon.icon }} {{ icon.color }}"></i>
+                        {% endfor %}
+                    {% else %}
+                        <img src="{{ url_for('static',filename='img/'+skill.svgFile+".svg")}}" class="img-fluid {{skill.color}}" style="max-height: 300px;" width="60px" height="60px" alt="">
+                        <img src="{{ url_for('static',filename='img/'+skill.svgFile+"hover.svg")}}" class="img-fluid {{skill.color}} hover" style="max-height: 300px;" width="60px" height="60px" alt="">
+                    {% endif %}
+                    </div>
+                    <h4>{{ skill.title }}</h4>
+                    <p>{{ skill.description }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section><!-- End Skills Section -->

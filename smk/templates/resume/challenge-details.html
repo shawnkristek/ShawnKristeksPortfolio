@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Portfolio Details
+{% endblock %}
+
+{% block body %}
+<main id="main">
+
+  <!-- ======= Portfolio Details ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-8">
+          <h2 class="portfolio-title">{{ challenge.name.title() }}</h2>
+          <div class="owl-carousel portfolio-details-carousel">
+            {% for img in challenge.gallery %}
+            <img src="{{ url_for('static', filename=img.url) }}" class="img-fluid" alt="img.alt">
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="col-lg-4 portfolio-info">
+          <ul>
+            <li><strong>Category</strong>: {{ challenge.category.title() }}</li>
+            <li><strong>Completion Date</strong>: {{ challenge.date }}</li>
+            <!--li><strong>URL</strong>: <a href="{{ challenge.url }}">{{ challenge.url }}</a></li-->
+            <li><strong>Technologies</strong>: {{ challenge.technologies }}</li>
+            {% if challenge.demo == 'true' %}
+            <li><a href="{{ url_for(challenge.url) }}" target="_blank"><button class="btn btn-success btn-block">Demo {{challenge.name.title()}}</button></a></li>
+            {% endif %}
+          </ul>
+
+          <p>
+           {{ challenge.description }} 
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Details -->
+
+</main><!-- End #main -->
+
+{% endblock %}

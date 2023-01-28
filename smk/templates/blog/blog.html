@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  {% block blogtitle %} {% endblock %}
+{% endblock %}
+
+{% block body %}
+<!-- ======= Blog Section ======= -->
+<section id="blog" class="blog section-bg">
+  <div class="section-title">
+    <h2>{% block sectiontitle %}{% endblock %}</h2>
+    <p>{% block sectionsummary %}{% endblock %}
+  </div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="row mt-1">
+
+      <div class="col-lg-7 mt-5 mt-lg-0">
+        <div id="blog-posts">
+
+          {% block blogfeed %}
+
+          {% endblock %}
+        </div>
+      </div>
+
+      <div class="col-lg-1 mt-5 mt-lg-0">
+        <!-- negative space -->
+      </div>
+
+      <div class="sidebar col-lg-4 mt-5 mt-lg-0">
+        <!--aside id="sidebar" >
+          {# for tag in post['tags'] #}
+                <h5>TOPICS:</h5>
+              <div class="topics">
+                <hr>
+                {# for tag in post['tags'] #}
+                <div>Python</div>
+                <hr>
+                <div>Git</div>
+                <hr>
+                <div>SQLite</div>
+                <hr>
+                <div>Javascript</div>
+                <hr>
+                <div>Flask</div>
+                <hr>
+                {# endfor #}
+              </div
+          {# endfor #}
+        </aside-->
+      </div>
+
+    </div>
+  </div>
+
+
+
+</section>
+
+{% endblock %}{# body #}

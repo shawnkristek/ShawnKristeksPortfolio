@@ -1,0 +1,4 @@
+include smk/schema.sql
+graft smk/static
+graft smk/templates
+global-exclude *.pyc

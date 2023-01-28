@@ -1,0 +1,511 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "name": "ShawnKristek.com",
+            "img": {
+                "url": "img/portfolio/smk-details-1.jpg",
+                "alt": "Shawn Kristek.com Full Stack Software Engineer"
+            },
+            "filter": "py",
+            "category": "flask app",
+            "gallery": [
+                {
+                    "url": "img/portfolio/smk-details-1.jpg",
+                    "alt": "ShawnKristek.com homepage"
+                },
+                {
+                    "url": "img/portfolio/smk-details-2.jpg",
+                    "alt": "ShawnKristek.com skills section"
+                }
+            ],
+            "urltext": "www.shawnkristek.com",
+            "url": "index",
+            "date": "December 2020",
+            "description": "This live version of my portfolio is a heavily customized Python and Flask app adapted from a BootstrapMade front-end template. It was an enjoyable exploration of Python and Flask thanks to the similarities shared with Ruby on Rails. This site features a mix of CSS and JS interactive elements, and dynamic data loading using Jinja2 and JSON.",
+            "technologies": "Python, Flask, JS, HTML5, CSS, Bootstrap, jQuery, Jinja, JSON",
+            "demo": "false"
+        },
+        {
+            "id": 1,
+            "name": "LoveYouLater Productions",
+            "img": {
+                "url": "img/portfolio/luv-details-1.jpg",
+                "alt": "Love You Later Productions: Photography and Videography"
+            },
+            "filter": "wp",
+            "category": "wordpress site & branding",
+            "gallery": [
+                {
+                    "url": "img/portfolio/luv-details-1.jpg",
+                    "alt": "Love You Later Productions homepage"
+                },
+                {
+                    "url": "img/portfolio/luv-details-2.jpg",
+                    "alt": "love you later portfolio"
+                },
+                {
+                    "url": "img/portfolio/luv-details-3.jpg",
+                    "alt": "love you later responsive"
+                }
+            ],
+            "urltext": "www.loveyoulater.productions",
+            "url": "links.luv",
+            "date": "November 2015",
+            "description": "Love You Later Productions is a photography and videography side hustle for George Maturino. Together we brainstormed and designed his branding and this online portfolio as an easy way to show potential clients his work.",
+            "technologies": "HTML, CSS, Wordpress, Adobe Illustrator",
+            "demo": "false"
+        },
+        {
+            "id": 2,
+            "name": "Wertz Werkz",
+            "img": {
+                "url": "img/portfolio/ww-details-1.jpg",
+                "alt": "Wertz Werkz carnival games homepage"
+            },
+            "filter": "wp",
+            "category": "wordpress site & branding",
+            "gallery": [
+                {
+                    "url": "img/portfolio/ww-details-1.jpg",
+                    "alt": "Wertz Werkz Collapsible carnival games homepage"
+                },
+                {
+                    "url": "img/portfolio/ww-details-2.jpg",
+                    "alt": "Wertz Werkz carnival games catalog"
+                },
+                {
+                    "url": "img/portfolio/ww-details-3.jpg",
+                    "alt": "Wertz Werkz quality games for all ages"
+                }
+            ],
+            "urltext": "www.wertzwerkz.net",
+            "url": "links.wertz",
+            "date": "November 2010",
+            "description": "While attending Texas A&M I met the serial entrepreneur Andy Wertz. One of his favorite ways to give back was to hire college students to provide them with a pay check and work experience for their resumes. He was in need of a web presence and branding so I built him a Wordpress site as well as set up his social media profiles. Many students since then have worked on his web presence, but much of my work for the overall site theme, branding, and functionality is still present.",
+            "technologies": "HTML, CSS, Adobe Illustrator, Adobe Photoshop, Wordpress",
+            "demo": "false"
+        },
+        {
+            "id": 3,
+            "name": "BSWOLE Fitness",
+            "img": {
+                "url": "img/portfolio/bs-details-1.jpg",
+                "alt": "BSWOLE Own life's BS in health and wealth"
+            },
+            "filter": "wp",
+            "category": "wordpress site & branding",
+            "gallery": [
+                {
+                    "url": "img/portfolio/bs-details-1.jpg",
+                    "alt": "BSWOLE health and wealth coaching homepage"
+                },
+                {
+                    "url": "img/portfolio/bs-details-2.jpg",
+                    "alt": "BSWOLE health and wealth coaching Shawn Kristek your coach"
+                }
+            ],
+            "urltext": "www.bswole.com",
+            "url": "links.bswole",
+            "date": "July 2018",
+            "description": "BSWOLE Health and Wealth Coaching is one of my experiments in entrepreneurship. This one page Wordpress site is designed to inspire individuals to to take action with improving their health. Every aspect of the design was built by me using a mix of plugins and softwares.",
+            "technologies": "HTML, CSS, Adobe Illustrator, Adobe Photoshop, Wordpress",
+            "demo": "false"
+        },
+        {
+            "id": 4,
+            "name": "Skull Yum",
+            "img": {
+                "url": "img/portfolio/sy-details-1.jpg",
+                "alt": "skull yum"
+            },
+            "filter": "shopify",
+            "category": "shopify business",
+            "gallery": [
+                {
+                    "url": "img/portfolio/sy-details-1.jpg",
+                    "alt": "Skull Yum tasty skull apparel homepage"
+                },
+                {
+                    "url": "img/portfolio/sy-details-2.jpg",
+                    "alt": "Skull Yum tasty skull apparel catalog"
+                },
+                {
+                    "url": "img/portfolio/sy-details-3.jpg",
+                    "alt": "Skull Yum tasty skull apparel branding"
+                },
+                {
+                    "url": "img/portfolio/sy-details-4.jpg",
+                    "alt": "Skull Yum tasty skull apparel responsive design"
+                }
+            ],
+            "urltext": "www.skullyum.com",
+            "url": "links.skull",
+            "date": "November 2018",
+            "description": "Skull Yum is a print on demand business that sells a variety of food themed sugar skull designs. My wife and I built every aspect of this business from the ground up. It was an experiment in branding, entrepreneurship, and an exploration of Shopify.",
+            "technologies": "HTML, CSS, Adobe Illustrator, Adobe Photoshop, Shopify",
+            "demo": "false"
+        },
+        {
+            "id": 5,
+            "name": "Quotivation",
+            "img": {
+                "url": "img/portfolio/quotivation-01.jpg",
+                "alt": "Quotivation, a random quote generator"
+            },
+            "filter": "js",
+            "category": "web app",
+            "gallery": [
+                {
+                    "url": "img/portfolio/quotivation-01.jpg",
+                    "alt": "image alt tag"
+                },
+                {
+                    "url": "img/portfolio/quotivation-02.jpg",
+                    "alt": "image alt tag"
+                },
+                {
+                    "url": "img/portfolio/quotivation-03.jpg",
+                    "alt": "image alt tag"
+                }
+            ],
+            "urltext": "Quotivation",
+            "url": "quotes",
+            "date": "December 2020",
+            "description": "A fun and colorful random quote generator done as an exercise in APIs: Twitter and Forismatic.com",
+            "technologies": "HTML5, CSS, jQuery, Javascript, AJAX, APIs",
+            "demo": "true"
+        }
+    ],
+    "challenges": [],
+    "skills": [
+        {
+            "delay": 100,
+            "category": "cloud",
+            "color": "aws-orange",
+            "path": "",
+            "svgFile": "aws",
+            "icons": [
+                {
+                    "icon": "bxl-aws",
+                    "color": "aws-orange"
+                }
+            ],
+            "title": "AWS",
+            "description": ""
+        },
+        {
+            "delay": 200,
+            "category": "styling",
+            "color": "iconbox-blue",
+            "path": "",
+            "svgFile": "",
+            "icons": [
+                {
+                    "icon": "bxl-css3",
+                    "color": "iconbox-blue"
+                }
+            ],
+            "title": "CSS3",
+            "description": ""
+        },
+        {
+            "delay": 300,
+            "category": "framework",
+            "color": "django-green",
+            "path": "",
+            "svgFile": "",
+            "icons": [
+                {
+                    "icon": "bxl-django",
+                    "color": "django-green"
+                }
+            ],
+            "title": "django",
+            "description": ""
+        },
+        {
+            "delay": 400,
+            "category": "react native framework",
+            "color": "expo-white",
+            "path": "",
+            "svgFile": "expo",
+            "icons": [
+                {
+                    "icon": "bxl-expo",
+                    "color": "expo-white"
+                }
+            ],
+            "title": "Expo",
+            "description": ""
+        },
+        {
+            "delay": 500,
+            "category": "framework",
+            "color": "flask-grey",
+            "path": "",
+            "svgFile": "flask",
+            "icons": [
+                {
+                    "icon": "flask",
+                    "color": "flask-grey"
+                }
+            ],
+            "title": "Flask",
+            "description": ""
+        },
+        {
+            "delay": 600,
+            "category": "version control",
+            "color": "iconbox-orange",
+            "path": "",
+            "svgFile": "",
+            "icons": [
+                {
+                    "icon": "bxl-git",
+                    "color": "iconbox-orange"
+                }
+            ],
+            "title": "Git",
+            "description": ""
+        },
+        {
+            "delay": 700,
+            "category": "version control",
+            "color": "github-cat",
+            "path": "",
+            "svgFile": "",
+            "icons": [
+                {
+                    "icon": "bxl-github",
+                    "color": "github-cat"
+                }
+            ],
+            "title": "GitHub",
+            "description": ""
+        },
+        {
+            "delay": 800,
+            "category": "API",
+            "color": "graphql-pink",
+            "path": "",
+            "svgFile": "graphql",
+            "icons": [
+                {
+                    "icon": "bxl-graphql",
+                    "color": "graphql-pink"
+                }
+            ],
+            "title": "GraphQL",
+            "description": ""
+        },
+        {
+            "delay": 900,
+            "category": "markup",
+            "color": "iconbox-orange",
+            "path": "",
+            "svgFile": "",
+            "icons": [
+                {
+                    "icon": "bxl-html5",
+                    "color": "iconbox-orange"
+                }
+            ],
+            "title": "HTML5",
+            "description": ""
+        },
+        {
+            "delay": 1000,
+            "category": "javascript engine",
+            "color": "node-green",
+            "path": "",
+            "svgFile": "",
+            "icons": [
+                {
+                    "icon": "bxl-nodejs",
+                    "color": "node-green"
+                }
+            ],
+            "title": "Node",
+            "description": ""
+        },
+        {
+            "delay": 1100,
+            "category": "programming language",
+            "color": "iconbox-blue",
+            "path": "",
+            "svgFile": "",
+            "icons": [
+                {
+                    "icon": "bxl-python",
+                    "color": "iconbox-blue"
+                }
+            ],
+            "title": "Python",
+            "description": ""
+        },
+        {
+            "delay": 1200,
+            "category": "front-end framework",
+            "color": "react-blue",
+            "path": "",
+            "svgFile": "",
+            "icons": [
+                {
+                    "icon": "bxl-react",
+                    "color": "react-blue"
+                }
+            ],
+            "title": "React",
+            "description": ""
+        },
+        {
+            "delay": 1300,
+            "category": "css utility framework",
+            "color": "tailwind-blue",
+            "path": "",
+            "svgFile": "tailwind",
+            "icons": [
+                {
+                    "icon": "bxl-tailwind",
+                    "color": "tailwind-blue"
+                }
+            ],
+            "title": "Tailwind",
+            "description": ""
+        }
+    ],
+    "resume": {
+        "professional experience": [
+            {
+                "title": "Advanced Level Cook",
+                "subtitle": "",
+                "years": "2018 - 2020",
+                "location": "Vail Resorts, Park City, UT",
+                "filters": [
+                    "passions",
+                    "cooking",
+                    "high-pressure"
+                ],
+                "highlight": "true",
+                "bullets": [
+                    "Promoted to Advanced Level after one season.",
+                    "Mastered balancing quality and short deadlines in a high stress environment."
+                ]
+            },
+            {
+                "title": "Electrical Engineer",
+                "subtitle": "",
+                "years": "2012 - 2017",
+                "location": "Weatherford International, Kingwood, TX",
+                "filters": [
+                    "engineering"
+                ],
+                "highlight": "true",
+                "bullets": [
+                    "Defined hardware and software requirements for control systems.",
+                    "Refined broad objectives to develop schematic designs and optimize PCB layouts for final product form factors.",
+                    "Collaborated with test engineers, manufacturing, and other departments to resolve production issues, extend aging products, and validate new designs."
+                ]
+            },
+            {
+                "title": "Laboratory Technician",
+                "subtitle": "For Distributed AI Robotics Lab",
+                "years": "2010 - 2011",
+                "location": "Texas A&M University, College Station, TX",
+                "filters": [
+                    "engineering",
+                    "development",
+                    "technician"
+                ],
+                "highlight": "false",
+                "bullets": [
+                    "Designed robot platform enhancements using 3D modeling.",
+                    "Assembled and maintained flock of roomba-bots and robotic arms.",
+                    "Improved laboratory organization and environment."
+                ]
+            },
+            {
+                "title": "Teaching Assistant",
+                "subtitle": "For Dept. of CS & ENGR",
+                "years": "2010 - 2011",
+                "location": "Texas A&M University, College Station, TX",
+                "filters": [
+                    "teaching",
+                    "technical"
+                ],
+                "highlight": "false",
+                "bullets": [
+                    "Assisted students in their development of proper methods of technical writing.",
+                    "Reviewed student assignments and provided constructive feedback."
+                ]
+            },
+            {
+                "title": "Electronics Technician",
+                "subtitle": "Repair Technician",
+                "years": "2007 - 2009",
+                "location": "Mega Lift Systems, Tyler, TX",
+                "filters": [
+                    "engineering",
+                    "technician",
+                    "pcb"
+                ],
+                "highlight": "false",
+                "bullets": [
+                    "Diagnosed and resolved issues with electronic plunger lift control systems and other electronic devices.",
+                    "Assembled products start-to-finish, from soldering PCB components to final enclosure.",
+                    "Tested products to assure quality met company standards."
+                ]
+            },
+            {
+                "title": "Laboratory Instructor",
+                "subtitle": "",
+                "years": "2007 - 2007",
+                "location": "University of Texas at Tyler, Tyler, TX",
+                "filters": [
+                    "engineering",
+                    "teaching",
+                    "technician",
+                    "pcb",
+                    "robot"
+                ],
+                "highlight": "false",
+                "bullets": [
+                    "Assisted with instruction and execution of laboratory exercises for electrical engineering students.",
+                    "Constructed projects (mostly robotic) for educational and departmental displays."
+                ]
+            }
+        ],
+        "education": [
+            {
+                "title": "Masters Of Science",
+                "subtitle": "Computer Science, AI and Robotics",
+                "location": "Texas A&M University, College Station, TX",
+                "years": "2009 - 2011",
+                "filters": [],
+                "highlight": "true",
+                "description": "While tinkering with robots in undergrad, I discovered a passion for robots as well as coding. So I pursued the topic further at Texas A&M.",
+                "bullets": [
+                    "Thesis: Orienting Deformable Polygonal Parts without Sensors",
+                    "3.63 Cumulative GPA",
+                    "Royce E. Wisenbaker '39 Graduate Fellowship",
+                    "Key Computer Science Courses: Artificial Intelligence, Analysis of Algorithms, Intelligent Systems & Robotics, Intelligent User Interfaces, Multi-Robot Systems, Software Engineering"
+                ]
+            },
+            {
+                "title": "Bachelors Of Science",
+                "subtitle": "Electrical Engineering",
+                "location": "University of Texas at Tyler, Tyler, TX",
+                "years": "2005 - 2009",
+                "filters": [],
+                "highlight": "true",
+                "description": "I was fortunate to learn early in a high school physics class, that I enjoyed electrical engineering. This passion lead me to UTTyler.",
+                "bullets": [
+                    "Outstanding Senior of the Year, EE Dept.",
+                    "3.65 Cumulative GPA, Cum Laude",
+                    "Where I first discoverd my passion for robotics and coding"
+                ]
+            }
+        ]
+    }
+}

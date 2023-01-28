@@ -1,0 +1,29 @@
+<!-- ======= Mobile nav toggle button ======= -->
+<button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex flex-column justify-content-center">
+      <nav class="nav-menu">
+            <ul>
+                  {% if g.user %}
+                  <li class="logged-in username"><span>{{ g.user['username'].capitalize() }}</span></li>
+                  <hr class="line">
+                  <li class="logged-in"><a href="{{ url_for('auth.logout') }}"><i class="bx bx-log-out"></i> <span>Log
+                                    Out</span></a></li>
+                  <li class="logged-in"><a href="{{ url_for('blog.create') }}"><i class="bx bx-edit"></i> <span>New
+                                    Post</span></a>
+                  </li>
+                  <hr class="line">
+                  {% endif %}
+
+                  <li><a href="{{url_for('index')}}#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                  <li><a href="{{url_for('index')}}#portfolio"><i class="bx bx-book-content"></i>
+                              <span>Portfolio</span></a></li>
+                  <li><a href="{{url_for('index')}}#skills"><i class="bx bx-brain"></i> <span>Skills</span></a></li>
+                  <!--li><a href="{#{url_for('index')}#}#about"><i class="bx bx-user"></i> <span>About</span></a></li-->
+                  <li><a href="{{url_for('index')}}#contact" id="nav-contact"><i class="bx bx-envelope"></i>
+                              <span>Contact</span></a></li>
+                  <!--li><a href="{{ url_for('blog.blog') }}" id="nav-blog"><i class="bx bx-message-alt-detail"></i> <span>Blog</span></a></li-->
+            </ul>
+      </nav><!-- .nav-menu -->
+</header>
